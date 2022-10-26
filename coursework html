@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Ocean Cleanup</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>The Ocean Cleanup</h1>
+        <ul>
+            <li>Marine Plastic Debris</li>
+            <li>History</li>
+            <li>Technology</li>
+            <ul>
+                <li>Ocean Cleanup</li>
+                <li>River Interception</li>
+                <li>Plastic Recycling</li>
+            </ul>
+            <li>Calculator</li>
+        </ul>
+        <h2>Summary</h2>
+        <p>The Ocean Cleanup is a nonprofit engineering environmental organization based in the Netherlands, founded in 2013 by Boyan Slat, a Dutch-born inventor-entrepreneur of Croatian and Dutch origin who serves as its CEO. It develops technology to extract plastic pollution from the oceans and intercept it in rivers before it can reach the ocean. The organization conducts scientific research into oceanic plastic pollution. It has conducted two expeditions to the North Pacific Gyre, the Mega Expedition and the Aerial Expedition, and continues to publish scientific papers.
+        </p>
+        <iframe width="420" height="315"
+        src="https://www.youtube-nocookie.com/embed/ROW9F-c0kIQ">
+        </iframe>
+        <h2>Marine Plastic Debris</h2>
+        <p>It is estimated that there is a stock of 86 million tons of plastic marine debris in the worldwide ocean as of the end of 2013, assuming that 1.4% of global plastics produced from 1950 to 2013 has entered the ocean and has accumulated there. 8.8 million metric tons of plastic waste are dumped in the world's oceans each year. Asia was the leading source of mismanaged plastic waste, with China alone accounting for 2.4 million metric tons. In 2017 the UN estimated that by 2050 there will be more plastic than fish in the oceans, if substantial measures are not taken.</p>
+        <img src ="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/gyres.png" alt="oceanic gyres" title="Garbage patches have formed in all five oceanic gyres." />
+        <p>Garbage patches have formed in all five oceanic gyres.</p>
+        <p>Plastic waste has reached all the world's oceans. However, it has been found that plastic debris concentrates in the oceanic gyres where it forms extensive garbage patches. Of those, the North Pacific garbage patch is the biggest, with an estimated area of 1.6 million square kilometers. Plastic accumulating in these patches photodegrades into smaller and smaller particles and releases toxic and endocrine chemicals such as bisphenol A (BPA).</p>
+        <p>Plastic pollution harms an estimated 100,000 sea turtles and marine mammals and 1,000,000 sea creatures each year. Larger plastics (called "macroplastics") such as plastic shopping bags can clog the digestive tracts of larger animals when consumed by them and can cause starvation through restricting the movement of food, or by filling the stomach and tricking the animal into thinking it is full. Microplastics on the other hand harm smaller marine life. For example, pelagic plastic pieces in the center of our ocean’s gyres outnumber live marine plankton, and are passed up the food chain to reach all marine life as well as human consumers.</p>
+        <h2>How long until it's gone?</h2>
+        <p>Decomposition times of common marine debris</p>
+        <table>
+            <tr>
+                <td>2-4 weeks</td>
+                <td>Paper towel</td>
+            </tr>
+            <tr>
+                <td>6 weeks</td>
+                <td>Newspaper</td>
+            </tr>
+            <tr>
+                <td>2 months</td>
+                <td>Apple core, cardboard box</td>
+            </tr>
+            <tr>
+                <td>3 months</td>
+                <td>Waxed carton</td>
+            </tr>
+            <tr>
+                <td>2-5 months</td>
+                <td>Cotton shirt</td>
+            </tr>
+            <tr>
+                <td>1-3 years</td>
+                <td>Plywood</td>
+            </tr>
+            <tr>
+                <td>1-5 years</td>
+                <td>Cigarette butt, wool socks</td>
+            </tr>
+            <tr>
+                <td>50 years</td>
+                <td>Plastic beverage holder, styrofoam cup, tin can, foam buoy</td>
+            </tr>
+            <tr>
+                <td>200 years</td>
+                <td>Aluminum can</td>
+            </tr>
+            <tr>
+                <td>450 years</td>
+                <td>Plastic bottle, disposable nappies</td>
+            </tr>
+            <tr>
+                <td>600 years</td>
+                <td>Fishing line</td>
+            </tr>
+            <tr>
+                <td>undetermined</td>
+                <td>Glass bottle</td>
+            </tr>
+        </table>
+    </body>
+</html>
