@@ -1,0 +1,10 @@
+h1 {background-color: #e0218a;
+    color: blanchedalmond;
+    font-style: italic;}
+
+nav {
+display: flex;
+margin: 0;
+padding: 0;
+list-style: none;
+}
