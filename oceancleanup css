@@ -1,17 +1,123 @@
-h1 {background-color: #e0218a;
-    color: blanchedalmond;
-    font-style: italic;}
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&family=Special+Elite&display=swap');
+/*finished first two videos on canvas Intermezzo: CSS Demonstration */
 
-.nav-list {
-display: flex;
-gap: 1rem;
-flex-wrap: wrap;
-margin: 0;
-padding: 0;
-list-style: none;
+/******* page layout *******/
+body {
+  max-width: 100ch;
+  margin: 0 2rem 0 14rem;
 }
 
-.nav-list ul {
-flex-grow: 1;
-flex-shrink: 1;
+header {
+  text-align: center;
+}  
+.container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+  }  
+  .nav {
+    overflow: hidden;
+  }
+.nav li{
+  float: left;    
+}  
+  
+.nav a {
+  display: inline-block;
+  gap: 1rem;
+  flex-wrap: wrap;
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
 }
+
+  /* this is wonky */
+ul li ul.submenu {
+  display: none;
+}
+
+ul li:hover ul.submenu {
+  display: block;
+}  
+
+ul li ul.submenu li{
+  display: block;
+}
+
+footer{
+  text-align: center;
+  font-size: smaller;
+  padding: 2em;
+  border-top: 0;
+}
+
+  /******* colors, fonts, and images *******/
+.nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Darker Grotesque', sans-serif;
+}
+.nav a:hover {
+  color:antiquewhite;
+  background-color: #86c9c9bd;
+}
+.nav ul{
+  background-color: #017C7Bbd;
+  list-style-type: none;
+}
+
+.bg-img-foot {
+  background-image: url("http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/ocean.jpg");
+  max-height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.bg-img {
+  background-image: url("http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/ocean.jpg");
+  min-height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+h1 {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-family: 'Darker Grotesque', 'Newport Gothic', sans-serif;
+  font-size: 3rem;
+}
+h2 {
+  font-family: 'Special Elite', cursive;
+}
+
+#titlethe {
+  font-size: 0.83em;
+  vertical-align: super;
+  font-weight: lighter;
+}
+
+#titleocean {
+  text-shadow: 2px 2px 4px #000000;
+  font-weight: lighter;
+}
+
+#titlecleanup {
+  font-weight: bold;
+  text-shadow: 0.05cm 0.05cm  0.025cm #000000;
+}
+ 
+/*
+  give the calculator absolute position (it will be relative to surrounding/parent element)
+  Position the navbar container inside the image 
+
+
+
+
+#calculator {
+    background-color: #FFF6C6;
+}
+*/
