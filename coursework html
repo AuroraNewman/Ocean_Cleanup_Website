@@ -41,15 +41,20 @@
             <section id="sec marine plastic debris">
                 <h2>Marine Plastic Debris</h2>
                 <p>It is estimated that there is a stock of 86 million tons of plastic marine debris in the worldwide ocean as of the end of 2013, assuming that 1.4% of global plastics produced from 1950 to 2013 has entered the ocean and has accumulated there. 8.8 million metric tons of plastic waste are dumped in the world's oceans each year. Asia was the leading source of mismanaged plastic waste, with China alone accounting for 2.4 million metric tons. In 2017 the UN estimated that by 2050 there will be more plastic than fish in the oceans, if substantial measures are not taken.</p>
-                <img src ="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/gyres.png" alt="oceanic gyres" title="Garbage patches have formed in all five oceanic gyres." />
+                <div class="wrapper">
+                    <div class="item">
+                        <div class = "polaroid">
+                            <img src ="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/gyres.png" alt="oceanic gyres" title="Garbage patches have formed in all five oceanic gyres." />
+                        </div>
+                    </div>
+                </div>
                 <figcaption>Garbage patches have formed in all five oceanic gyres.</figcaption>
                 <p>Garbage patches have formed in all five oceanic gyres.</p>
                 <p>Plastic waste has reached all the world's oceans. However, it has been found that plastic debris concentrates in the oceanic gyres where it forms extensive garbage patches. Of those, the North Pacific garbage patch is the biggest, with an estimated area of 1.6 million square kilometers. Plastic accumulating in these patches photodegrades into smaller and smaller particles and releases toxic and endocrine chemicals such as bisphenol A (BPA).</p>
                 <p>Plastic pollution harms an estimated 100,000 sea turtles and marine mammals and 1,000,000 sea creatures each year. Larger plastics (called "macroplastics") such as plastic shopping bags can clog the digestive tracts of larger animals when consumed by them and can cause starvation through restricting the movement of food, or by filling the stomach and tricking the animal into thinking it is full. Microplastics on the other hand harm smaller marine life. For example, pelagic plastic pieces in the center of our ocean’s gyres outnumber live marine plankton, and are passed up the food chain to reach all marine life as well as human consumers.</p>
                 <div id="midtable">
-                    <h2>How long until it's gone?</h2>
-                    <p>Decomposition times of common marine debris</p>
                     <table id="decomposition table">
+                        <th colspan="2">How long until it's gone?</br>Decomposition times of common marine debris</th>
                         <tr>
                             <td>2-4 weeks</td>
                             <td>Paper towel</td>
@@ -103,8 +108,14 @@
             </section>
             <section id = "history">
                 <h2>History</h2>
-                    <img src ="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/slat_2018.jpg" alt="Boyan Slat portrait" title="Boyan Slat in 2018" />
-                    <figcaption>Boyan Slat in 2018</figcaption>
+                <div class = "wrapper">
+                    <div class="item">
+                        <div class = "polaroid">
+                            <img src ="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/slat_2018.jpg" alt="Boyan Slat portrait" title="Boyan Slat in 2018" />
+                        <figcaption>Boyan Slat in 2018</figcaption>
+                        </div>
+                    </div>
+                </div>
                     <p>In 2011, aged 16, Dutch Boyan Slat came across more plastic than fish while diving in Greece. He decided to devote a high school project for deeper investigation into ocean plastic pollution and why it was considered impossible to clean up.</p>
                     <p>Slat discontinued his aerospace engineering studies at TU Delft to devote his time to developing his idea. He founded The Ocean Cleanup in 2013. The group's mission is to develop advanced technologies to rid the world's oceans of plastic. In June 2014, the Ocean Cleanup published a 528-page feasibility study about the project's potential.</p>
                     <p>The Ocean Cleanup is mainly funded by donations and sponsors. As of November 2019 it has made a little over $35 million from sponsors including Salesforce chief executive Marc Benioff, philanthropist Peter Thiel, Julius Baer Foundation and Royal DSM. The Ocean Cleanup raised over $2 million with the help of a crowdfunding campaign in 2014.</p>
@@ -114,19 +125,31 @@
                     <p id="quote">"Technology is the most potent agent of change. It is an amplifier of our human capabilities" -- Boyan Slat</p>
                     <h3 id="oceancleanup">Ocean Cleanup</h3>
                     <p>The filtering system uses passive floating structures localized in the ocean gyres. These structures act as a containment boom. The floater drifts with the wind, waves and ocean currents to capture marine debris. A permeable screen underneath the float catches subsurface debris. The system is unmanned and incorporates solar-powered monitoring and navigation systems, including GPS, cameras, lanterns and an automatic identification system (AIS) for vessel traffic services.</p>
-                    <img src ="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/system_001B.jpg" alt="Passive filtration system in ocean" title="System 001/B in the ocean" />
-                    <figcaption>System 001/B in the ocean</figcaption>
+                    <div class="wrapper">
+                        <div class="item">
+                            <div class = "polaroid">
+                                <img src ="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/system_001B.jpg" alt="Passive filtration system in ocean" title="System 001/B in the ocean" />
+                                <figcaption>System 001/B in the ocean</figcaption>
+                            </div>
+                        </div>
+                    </div>
                     <p>System 001, deployed in September 2018, consisted of a 800 meters long barrier with a 3 meters wide skirt that hangs beneath it. System 001 encountered difficulties retaining the plastic collected. After two month of operation, during which the system had collected 2,000 kilograms of plastic, mechanical stress caused an 18-meter section of the structure to detach. After several months of root cause analysis and redesign, the organization employed System 001/B which could successfully capture and collect plastic, and even microplastics.</p>
                     <p>At the end of July 2021, the organization revisited the Great Pacific Garbage Patch to trial System 002 -- a revamped version of the previous systems with an increased span of 1,600 metres. The new technology claims to capture 1,000 kg of plastics per day. As of 25 July 2022, The Ocean Cleanup announced to have removed a total of 100,000 kg of plastic from the Great Pacific Garbage Patch.</p>
                     <p>The organization is now developing System 003, which is planned to have a three times bigger plastic intake than the current design. Unlike the previous prototypes, this new system is meant to be a blueprint for an entire fleet of filtering systems able to meet the scale of the problem.</p>
                     <h3 id="riverinterception">River Interception</h3>
-                        <img src ="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/interceptor.jpg" alt="Passive filtration system in river" title="Interceptor in the Domenican Republic" />
-                        <figcaption>Interceptor in the Dominican Republic</figcaption>
+                    <div class = "wrapper">
+                        <div class="item">
+                        <div class = "polaroid">    
+                            <img src ="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/interceptor.jpg" alt="Passive filtration system in river" title="Interceptor in the Domenican Republic" />
+                            <figcaption>Interceptor in the Dominican Republic</figcaption>
+                            </div>
+                        </div>
+                    </div>
                         <p>As of October 2022, The Ocean Cleanup enterntains eight Interceptors in Indonesia, Malaysia, Viet Nam, Dominican Republic, USA and Jamaica.</p>
                     <h3 id="plasticrecycling">Plastic Recycling</h3>
                         <p>In October 2020, The Ocean Cleanup launched their first product made from plastic collected from the Great Pacific Garbage Patch, The Ocean Cleanup Sunglasses. The organization worked with DNV GL to develop a certification for plastic from water sources and the sunglasses were certified to originate from the GPGP. Revenue from the sale of recycling products go into their continued cleanup projects.</p>
                 </section>
-                <section id="calculator">
+                <aside id="calculator">
                     <div id="checkfootprint">
                         <h2>Check Your Own Plastic Footprint</h2>
                         <form method="post">
@@ -196,7 +219,7 @@
                         <section class ="reset calculator">
                             <input type="reset" value="Reset calculator">
                     </div>
-                    </section>
+                </aside>
                     
                 
                     </form>
