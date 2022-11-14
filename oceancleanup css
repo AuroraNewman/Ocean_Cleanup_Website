@@ -1,8 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&family=Special+Elite&display=swap');
-/*finished first two videos on canvas Intermezzo: CSS Demonstration */
+
+/******* page variables *******/
+html {
+  /* modular scale*/
+   /* 
+  --factor: 1.5;
+  --s0: 1 rem;
+  --s1: calc(var(--s0) * var(--factor)):
+  --s2: calc(var(--s1) * var(--factor)):
+  --s3: calc(var(--s2) * var(--factor)):
+  --s4: calc(var(--s3) * var(--factor)):
+  --s5: calc(var(--s4) * var(--factor)):
+  --s-1: calc(var(--s0) / var(--factor)):
+  --s-2: calc(var(--s-1) / var(--factor)):
+  --s-3: calc(var(--s-2) / var(--factor)):
+  --s-4: calc(var(--s-3) / var(--factor)):
+  --s-5: calc(var(--s-4) / var(--factor)):
+
+  
+
+  --text-detail-color: #2b440ac0;
+  */
+
+  --white-space: 2rem; /*remove this if the variables work*/
+}
 
 /******* page layout *******/
-body {
+main {
   max-width: 100ch;
   margin: 0 2rem 0 14rem;
 }
@@ -10,38 +34,30 @@ body {
 header {
   text-align: center;
 }  
-.container {
-    position: absolute;
-    margin: 20px;
-    width: auto;
-  }  
+ 
   .nav {
     overflow: hidden;
   }
 .nav li{
-  float: left;    
+  float: bottom;
+  display: inline-block;    
 }  
   
 .nav a {
   display: inline-block;
   gap: 1rem;
   flex-wrap: wrap;
-  float: left;
   text-align: center;
   padding: 14px 16px;
 }
 
   /* this is wonky */
-ul li ul.submenu {
+.submenu {
   display: none;
 }
 
-ul li:hover ul.submenu {
-  display: block;
-}  
-
-ul li ul.submenu li{
-  display: block;
+img {
+  display: inline-block;
 }
 
 footer{
@@ -51,12 +67,33 @@ footer{
   border-top: 0;
 }
 
+table{
+  width: 60%;
+  margin: auto;
+  border-collapse: collapse;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+th{
+  font-weight: bolder;
+  border-top: 2px solid black;
+}
+
+tr{
+  border-bottom: 1px solid grey;
+}
+
   /******* colors, fonts, and images *******/
 .nav a {
   color: #333;
   text-decoration: none;
   font-size: 17px;
   font-family: 'Darker Grotesque', sans-serif;
+}
+figcaption{
+  font-size: smaller;
+  float: bottom right;
 }
 .nav a:hover {
   color:antiquewhite;
@@ -65,24 +102,24 @@ footer{
 .nav ul{
   background-color: #017C7Bbd;
   list-style-type: none;
+  margin: 0;
+  text-align: center;
 }
 
 .bg-img-foot {
   background-image: url("http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/ocean.jpg");
-  max-height: 50px;
+  min-height: 50px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   position: relative;
 }
 
 .bg-img {
   background-image: url("http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/ocean.jpg");
-  min-height: 380px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 h1 {
   text-transform: uppercase;
@@ -109,6 +146,88 @@ h2 {
   font-weight: bold;
   text-shadow: 0.05cm 0.05cm  0.025cm #000000;
 }
+
+/**** Polaroid Photo effect ***/
+.polaroid {
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+  
+}
+.polaroid > img{
+  max-width: 100%;
+  height: auto;
+}
+.caption {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 2em;
+}
+.item {
+  width: 30%;
+  /*display: inline-block;*/
+  margin-top: 2rem;
+}
+.item .polaroid:before {
+  content: '';
+  /*position: absolute;*/
+  z-index: -1;
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+1) {
+  transform: scale(0.8, 0.8) rotate(5deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+1) .polaroid:before {
+  transform: rotate(6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+.item:nth-of-type(4n+2) {
+  transform: scale(0.8, 0.8) rotate(-5deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+2) .polaroid:before {
+  transform: rotate(-6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  left: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+.item:nth-of-type(4n+4) {
+  transform: scale(0.8, 0.8) rotate(3deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+4) .polaroid:before {
+  transform: rotate(4deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+}
+.item:nth-of-type(4n+3) {
+  transform: scale(0.8, 0.8) rotate(-3deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+3) .polaroid:before {
+  transform: rotate(-4deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  left: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+}
+
+/****** end Polaroid modified from https://codepen.io/Wandersonsc/pen/RMerRy ******/
+
+#calculator {
+  background-color: #FFF6C6;
+}
  
 /*
   give the calculator absolute position (it will be relative to surrounding/parent element)
@@ -117,7 +236,5 @@ h2 {
 
 
 
-#calculator {
-    background-color: #FFF6C6;
-}
+
 */
