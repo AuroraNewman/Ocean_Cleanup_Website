@@ -4,13 +4,13 @@
         <title>The Ocean Cleanup</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width; initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="C:\Users\Melissa\Desktop\ocean_cleanup.css" />
+        <link rel="stylesheet" type="text/css" href="H:\Desktop\ocean_cleanup.css" />
     </head>
     <body>
         <div class="bg-img">
             <div class = "container">
                 <header>
-                    <h1><span id="titlethe">The</span><span id="titleocean">Ocean</span> <span id ="titlecleanup">Cleanup</span></h1>
+                    <h1><span id="titlethe">The</span><span id="titleocean">Ocean</span><span id ="titlecleanup">Cleanup</span></h1>
                 </header>
                 <div class="nav">
                     <!--<nav>-->
@@ -32,22 +32,21 @@
         <main>
             <section id="sec summary">
                 <h2>Summary</h2>
-                <div class="text">The Ocean Cleanup is a nonprofit engineering environmental organization based in the Netherlands, founded in 2013 by Boyan Slat, a Dutch-born inventor-entrepreneur of Croatian and Dutch origin who serves as its CEO. It develops technology to extract plastic pollution from the oceans and intercept it in rivers before it can reach the ocean. The organization conducts scientific research into oceanic plastic pollution. It has conducted two expeditions to the North Pacific Gyre, the Mega Expedition and the Aerial Expedition, and continues to publish scientific papers.
+                <div class="paragraph">The Ocean Cleanup is a nonprofit engineering environmental organization based in the Netherlands, founded in 2013 by Boyan Slat, a Dutch-born inventor-entrepreneur of Croatian and Dutch origin who serves as its CEO. It develops technology to extract plastic pollution from the oceans and intercept it in rivers before it can reach the ocean. The organization conducts scientific research into oceanic plastic pollution. It has conducted two expeditions to the North Pacific Gyre, the Mega Expedition and the Aerial Expedition, and continues to publish scientific papers.
                 </div>
-                <iframe width="420" height="315"
+                <iframe
                 src="https://www.youtube-nocookie.com/embed/ROW9F-c0kIQ">
                 </iframe>
             </section>
             <section id="sec marine plastic debris">
                 <h2>Marine Plastic Debris</h2>
-                <div class="text">It is estimated that there is a stock of 86 million tons of plastic marine debris in the worldwide ocean as of the end of 2013, assuming that 1.4% of global plastics produced from 1950 to 2013 has entered the ocean and has accumulated there. 8.8 million metric tons of plastic waste are dumped in the world's oceans each year. Asia was the leading source of mismanaged plastic waste, with China alone accounting for 2.4 million metric tons. In 2017 the UN estimated that by 2050 there will be more plastic than fish in the oceans, if substantial measures are not taken.</div>
-                <figure>
+                <div class="paragraph">It is estimated that there is a stock of 86 million tons of plastic marine debris in the worldwide ocean as of the end of 2013, assuming that 1.4% of global plastics produced from 1950 to 2013 has entered the ocean and has accumulated there. 8.8 million metric tons of plastic waste are dumped in the world's oceans each year. Asia was the leading source of mismanaged plastic waste, with China alone accounting for 2.4 million metric tons. In 2017 the UN estimated that by 2050 there will be more plastic than fish in the oceans, if substantial measures are not taken.</div>
+                <figure class="leftimage">
                     <img src ="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/gyres.png" alt="oceanic gyres" title="Garbage patches have formed in all five oceanic gyres." />
                     <figcaption>Garbage patches have formed in all five oceanic gyres.</figcaption>
-                </figure>        
-                <figcaption>Garbage patches have formed in all five oceanic gyres.</figcaption>
+                </figure>
                 
-                <div class="text">Plastic waste has reached all the world's oceans. However, it has been found that plastic debris concentrates in the oceanic gyres where it forms extensive garbage patches. Of those, the North Pacific garbage patch is the biggest, with an estimated area of 1.6 million square kilometers. Plastic accumulating in these patches photodegrades into smaller and smaller particles and releases toxic and endocrine chemicals such as bisphenol A (BPA).
+                <div class="paragraph">Plastic waste has reached all the world's oceans. However, it has been found that plastic debris concentrates in the oceanic gyres where it forms extensive garbage patches. Of those, the North Pacific garbage patch is the biggest, with an estimated area of 1.6 million square kilometers. Plastic accumulating in these patches photodegrades into smaller and smaller particles and releases toxic and endocrine chemicals such as bisphenol A (BPA).
                 
                 Plastic pollution harms an estimated 100,000 sea turtles and marine mammals and 1,000,000 sea creatures each year. Larger plastics (called "macroplastics") such as plastic shopping bags can clog the digestive tracts of larger animals when consumed by them and can cause starvation through restricting the movement of food, or by filling the stomach and tricking the animal into thinking it is full. Microplastics on the other hand harm smaller marine life. For example, pelagic plastic pieces in the center of our ocean’s gyres outnumber live marine plankton, and are passed up the food chain to reach all marine life as well as human consumers.</div>
                 <div id="midtable">
@@ -110,7 +109,7 @@
                             <img src ="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/slat_2018.jpg" alt="Boyan Slat portrait" title="Boyan Slat in 2018" />
                         <figcaption>Boyan Slat in 2018</figcaption>
                     </figure>
-                    <div class="text">In 2011, aged 16, Dutch Boyan Slat came across more plastic than fish while diving in Greece. He decided to devote a high school project for deeper investigation into ocean plastic pollution and why it was considered impossible to clean up.
+                    <div class="paragraph">In 2011, aged 16, Dutch Boyan Slat came across more plastic than fish while diving in Greece. He decided to devote a high school project for deeper investigation into ocean plastic pollution and why it was considered impossible to clean up.
                         
                     Slat discontinued his aerospace engineering studies at TU Delft to devote his time to developing his idea. He founded The Ocean Cleanup in 2013. The group's mission is to develop advanced technologies to rid the world's oceans of plastic. In June 2014, the Ocean Cleanup published a 528-page feasibility study about the project's potential.
                     
@@ -118,103 +117,107 @@
                 </section>
                 <section id ="technology">
                     <h2>Technological Approaches</h2>
-                    <div id="quote">"Technology is the most potent agent of change. It is an amplifier of our human capabilities" -- Boyan Slat</div>
+                    <div class="quote">
+                        <span id="quotewords">"Technology is the most potent agent of change. It is an amplifier of our human capabilities" --</span>
+                    </br>
+                        <span id="quoteslat">Boyan Slat</span>
+                    </div>
                     <h3 id="oceancleanup">Ocean Cleanup</h3>
-                    <div class="text">The filtering system uses passive floating structures localized in the ocean gyres. These structures act as a containment boom. The floater drifts with the wind, waves and ocean currents to capture marine debris. A permeable screen underneath the float catches subsurface debris. The system is unmanned and incorporates solar-powered monitoring and navigation systems, including GPS, cameras, lanterns and an automatic identification system (AIS) for vessel traffic services.</div class="text">
-                    <figure>
+                    <div class="paragraph">The filtering system uses passive floating structures localized in the ocean gyres. These structures act as a containment boom. The floater drifts with the wind, waves and ocean currents to capture marine debris. A permeable screen underneath the float catches subsurface debris. The system is unmanned and incorporates solar-powered monitoring and navigation systems, including GPS, cameras, lanterns and an automatic identification system (AIS) for vessel traffic services.</div>
+                    <figure class="leftimage">
                         <img src ="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/system_001B.jpg" alt="Passive filtration system in ocean" title="System 001/B in the ocean" />
                         <figcaption>System 001/B in the ocean</figcaption>
                     </figure>
-                    <div class="text">System 001, deployed in September 2018, consisted of a 800 meters long barrier with a 3 meters wide skirt that hangs beneath it. System 001 encountered difficulties retaining the plastic collected. After two month of operation, during which the system had collected 2,000 kilograms of plastic, mechanical stress caused an 18-meter section of the structure to detach. After several months of root cause analysis and redesign, the organization employed System 001/B which could successfully capture and collect plastic, and even microplastics.
-                    
-                    At the end of July 2021, the organization revisited the Great Pacific Garbage Patch to trial System 002 -- a revamped version of the previous systems with an increased span of 1,600 metres. The new technology claims to capture 1,000 kg of plastics per day. As of 25 July 2022, The Ocean Cleanup announced to have removed a total of 100,000 kg of plastic from the Great Pacific Garbage Patch.
-                    
-                    The organization is now developing System 003, which is planned to have a three times bigger plastic intake than the current design. Unlike the previous prototypes, this new system is meant to be a blueprint for an entire fleet of filtering systems able to meet the scale of the problem.</div>
-                    <h3 id="riverinterception">River Interception</h3>
-                    <figure>
-                        <img src ="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/interceptor.jpg" alt="Passive filtration system in river" title="Interceptor in the Domenican Republic" />
-                        <figcaption>Interceptor in the Dominican Republic</figcaption>
-                    </figure>
-                        <div class="text">As of October 2022, The Ocean Cleanup enterntains eight Interceptors in Indonesia, Malaysia, Viet Nam, Dominican Republic, USA and Jamaica.</div>
-                    <h3 id="plasticrecycling">Plastic Recycling</h3>
-                        <div class="text">In October 2020, The Ocean Cleanup launched their first product made from plastic collected from the Great Pacific Garbage Patch, The Ocean Cleanup Sunglasses. The organization worked with DNV GL to develop a certification for plastic from water sources and the sunglasses were certified to originate from the GPGP. Revenue from the sale of recycling products go into their continued cleanup projects.</div>
+                    <div>
+                        <div class="paragraph">System 001, deployed in September 2018, consisted of a 800 meters long barrier with a 3 meters wide skirt that hangs beneath it. System 001 encountered difficulties retaining the plastic collected. After two month of operation, during which the system had collected 2,000 kilograms of plastic, mechanical stress caused an 18-meter section of the structure to detach. After several months of root cause analysis and redesign, the organization employed System 001/B which could successfully capture and collect plastic, and even microplastics.
+                        
+                        At the end of July 2021, the organization revisited the Great Pacific Garbage Patch to trial System 002 -- a revamped version of the previous systems with an increased span of 1,600 metres. The new technology claims to capture 1,000 kg of plastics per day. As of 25 July 2022, The Ocean Cleanup announced to have removed a total of 100,000 kg of plastic from the Great Pacific Garbage Patch.
+                        
+                        The organization is now developing System 003, which is planned to have a three times bigger plastic intake than the current design. Unlike the previous prototypes, this new system is meant to be a blueprint for an entire fleet of filtering systems able to meet the scale of the problem.</div>
+                        <h3 id="riverinterception">River Interception</h3>
+                        <figure>
+                            <img src ="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/interceptor.jpg" alt="Passive filtration system in river" title="Interceptor in the Domenican Republic" />
+                            <figcaption>Interceptor in the Dominican Republic</figcaption>
+                        </figure>
+                            <div class="paragraph">As of October 2022, The Ocean Cleanup enterntains eight Interceptors in Indonesia, Malaysia, Viet Nam, Dominican Republic, USA and Jamaica.</div>
+                        <h3 id="plasticrecycling">Plastic Recycling</h3>
+                            <div class="paragraph">In October 2020, The Ocean Cleanup launched their first product made from plastic collected from the Great Pacific Garbage Patch, The Ocean Cleanup Sunglasses. The organization worked with DNV GL to develop a certification for plastic from water sources and the sunglasses were certified to originate from the GPGP. Revenue from the sale of recycling products go into their continued cleanup projects.</div>
+                        </div>
                 </section>
-                <aside id="calculator">
-                    <div id="checkfootprint">
-                        <h2>Check Your Own Plastic Footprint</h2>
-                        <form method="post">
-                        <h3>Food & Kitchen</h3>
-                        <table id="food and kitchen table">
-                            <tr>
-                                <td>Plastic bottles</td>
-                                <td><input type ="number" name="plasticbottles" value="0" step="1">/week</td>
-                            </tr>
-                            <tr>
-                                <td>Plastic bags</td>
-                                <td><input type ="number" name="plasticbags" value="0" step="1">/week</td>
-                            </tr>
-                            <tr>
-                                <td>2 months</td>
-                                <td><input type ="number" name="plasticbags" value="0" step="1">/week</td>
-                            </tr>
-                            <tr>
-                                <td>Food wrapping</td>
-                                <td><input type ="number" name="foodwrapping" value="0" step="1">/week</td>
-                            </tr>
-                            <tr>
-                                <td>Yogurt, cream, etc. containers</td>
-                                <td><input type ="number" name="plasticbags" value="0" step="1">/week</td>
-                            </tr>
-                        </table>                                              
-                        <h3>Disposable Containers & Packaging</h3>
-                        <table id="disposable containers and packaging table">
-                            <tr>
-                                <td>Take-away plastic boxes</td>
-                                <td><input type ="number" name="plasticboxes" value="0" step="1">/month</td>
-                            </tr>
-                            <tr>
-                                <td>Take-away cups</td>
-                                <td><input type ="number" name="cups" value="0" step="1">/month</td>
-                            </tr>
-                            <tr>
-                                <td>Plastic-wrapped packages</td>
-                                <td><input type ="number" name="plasticpackages" value="0" step="1">/month</td>
-                            </tr>                        
-                        </table>
-                        <h3>Bathroom & Laundry</h3>
-                            <table id="bathroom and laundry table">
-                                <tr>
-                                    <td>Detergent & cleaning product bottles</td>
-                                    <td><input type ="number" name="cleaningbottles" value="0" step="1">/year</td>
-                                </tr>
-                                <tr>
-                                    <td>Shampoo, conditioner, & toiletries</td>
-                                    <td><input type ="number" name="toiletries" value="0" step="1">/year</td>
-                                </tr>
-                                <tr>
-                                    <td>Plastic toothbrushes</td>
-                                    <td><input type ="number" name="plastictoothbrushes" value="0" step="1">/year</td>
-                                </tr>                        
-                                <tr>
-                                    <td>Toothpaste</td>
-                                    <td><input type ="number" name="toothpastetubes" value="0" step="1">/year</td>
-                                </tr>                        
-                            </table>
-                        <h3>Household size</h3>
-                            <table>
-                                <tr>With how many people do you share your household products?<input type ="number" name="toothpastetubes" value="tubes" step="1"></tr>
-                            </table>
-                        <h3>Your Plastic Footprint</h3>
-                        <h3>Tip</h3>                    
-                        <section class ="reset calculator">
-                            <input type="reset" value="Reset calculator">
-                    </div>
-                </aside>
-                    
-                
                     </form>
                 </section>
-            </main>
+        </main>
+        <aside id="calculator">
+                        <div id="checkfootprint">
+                            <h2>Check Your Own Plastic Footprint</h2>
+                            <form method="post">
+                            <h3>Food & Kitchen</h3>
+                            <table id="food and kitchen table">
+                                <tr>
+                                    <td>Plastic bottles</td>
+                                    <td><input type ="number" name="plasticbottles" value="0" step="1">/week</td>
+                                </tr>
+                                <tr>
+                                    <td>Plastic bags</td>
+                                    <td><input type ="number" name="plasticbags" value="0" step="1">/week</td>
+                                </tr>
+                                <tr>
+                                    <td>2 months</td>
+                                    <td><input type ="number" name="plasticbags" value="0" step="1">/week</td>
+                                </tr>
+                                <tr>
+                                    <td>Food wrapping</td>
+                                    <td><input type ="number" name="foodwrapping" value="0" step="1">/week</td>
+                                </tr>
+                                <tr>
+                                    <td>Yogurt, cream, etc. containers</td>
+                                    <td><input type ="number" name="plasticbags" value="0" step="1">/week</td>
+                                </tr>
+                            </table>                                              
+                            <h3>Disposable Containers & Packaging</h3>
+                            <table id="disposable containers and packaging table">
+                                <tr>
+                                    <td>Take-away plastic boxes</td>
+                                    <td><input type ="number" name="plasticboxes" value="0" step="1">/month</td>
+                                </tr>
+                                <tr>
+                                    <td>Take-away cups</td>
+                                    <td><input type ="number" name="cups" value="0" step="1">/month</td>
+                                </tr>
+                                <tr>
+                                    <td>Plastic-wrapped packages</td>
+                                    <td><input type ="number" name="plasticpackages" value="0" step="1">/month</td>
+                                </tr>                        
+                            </table>
+                            <h3>Bathroom & Laundry</h3>
+                                <table id="bathroom and laundry table">
+                                    <tr>
+                                        <td>Detergent & cleaning product bottles</td>
+                                        <td><input type ="number" name="cleaningbottles" value="0" step="1">/year</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shampoo, conditioner, & toiletries</td>
+                                        <td><input type ="number" name="toiletries" value="0" step="1">/year</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Plastic toothbrushes</td>
+                                        <td><input type ="number" name="plastictoothbrushes" value="0" step="1">/year</td>
+                                    </tr>                        
+                                    <tr>
+                                        <td>Toothpaste</td>
+                                        <td><input type ="number" name="toothpastetubes" value="0" step="1">/year</td>
+                                    </tr>                        
+                                </table>
+                            <h3>Household size</h3>
+                                <table>
+                                    <tr>With how many people do you share your household products?<input type ="number" name="toothpastetubes" value="tubes" step="1"></tr>
+                                </table>
+                            <h3>Your Plastic Footprint</h3>
+                            <h3>Tip</h3>                    
+                            <section class ="reset calculator">
+                                <input type="reset" value="Reset calculator">
+                        </div>
+                    </aside>
         <footer>
             <div class="bg-img-foot">
                 <div class = "container">
