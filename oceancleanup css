@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&family=EB+Garamond&display=swap');
+
+/******* TODO *******/
+/*
+1. try to fix the aside so that it stays relative to the content. this is video Overall page layout: boxes and positioning in Intermezzo: CSS Demonstration timestamp around 19 minutes.
+
+*/
 
 /******* page variables *******/
 html {
   /* modular scale*/
-   /* 
+    
   --factor: 1.5;
   --s0: 1 rem;
   --s1: calc(var(--s0) * var(--factor)):
@@ -20,26 +28,36 @@ html {
   
 
   --text-detail-color: #2b440ac0;
-  */
+  
 
   --white-space: 2rem; /*remove this if the variables work*/
 }
 
 /******* page layout *******/
+
+* {
+  /*margin: 1rem;*/
+}
+body {
+  max-width: 1900px;
+}
+
+
 main {
-  max-width: 100ch;
-  margin: 0 2rem 0 14rem;
+  max-width: 80ch;
+  margin: 0 auto 0 auto;
 }
 
 header {
   text-align: center;
 }  
  
-  .nav {
+.nav {
     overflow: hidden;
-  }
+}
+
 .nav li{
-  float: bottom;
+  /* float: bottom; bottom is not a valid float spot */
   display: inline-block;    
 }  
   
@@ -50,15 +68,21 @@ header {
   text-align: center;
   padding: 14px 16px;
 }
-
-  /* this is wonky */
 .submenu {
   display: none;
 }
 
 img {
   max-width: 220px;
-  max-height: 150 px;
+}
+
+iframe {
+  width: 80ch;
+  height: 45ch;
+  /*
+  width: 420;
+  height: 315;
+  */
 }
 
 footer{
@@ -68,7 +92,7 @@ footer{
   border-top: 0;
 }
 
-table{
+#midtable{
   width: 60%;
   margin: auto;
   border-collapse: collapse;
@@ -78,18 +102,78 @@ table{
 
 th{
   font-weight: bolder;
-  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 tr{
   border-bottom: 1px solid grey;
 }
 
+aside {
+  width: 55ch;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding-top: 40px;
+  z-index: 1;
+  font-size: small;
+  top: 135rem;
+  background-color: #FFF6C6;
+}
+
+aside div {
+  padding: 8px;
+  display: block;
+  background-color: #FFF6C6;
+}
+
+@media screen and (max-width: 1500px) {
+  aside {
+    position: static;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html{
+    --factor: 1.4;
+  }
+  h1 {
+    --factor: 2;
+  }
+  nav {
+    position: static;
+    margin-bottom: var(--s1);
+    display: block;
+    --factor: 1.0; 
+  }
+  nav al{
+    position: static;
+  }
+  .nav li{
+    display: block; 
+ 
+  }
+  main {
+    margin: 0;
+  }
+  .bg-img h1{
+    font-size: 3rem;
+  }
+  iframe{
+    width: 25em;
+    height: calc(25em * 9 / 16);
+    max-width: 90vw;
+    max-height: calc(90vw * 9 / 16);
+  }
+
+}
+
   /******* colors, fonts, and images *******/
 .nav a {
-  color: #333;
+  color: #fff;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.5rem;
   font-family: 'Darker Grotesque', sans-serif;
 }
 .nav a:hover {
@@ -110,6 +194,12 @@ tr{
   background-size: cover;
 }
 
+.paragraph {
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
+  margin: 1rem auto 1rem auto;
+}
+
 figure {
   border: thin #c0c0c0 solid;
   display: flex;
@@ -117,6 +207,15 @@ figure {
   padding: 5px;
   max-width: 220px;
   margin: auto;
+  float: right;
+  rotate: 5deg;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .1);
+  margin: 1rem;
+}
+
+.leftimage{
+  float: left;
+  rotate: -5deg;
 }
 
 figcaption{
@@ -125,6 +224,18 @@ figcaption{
   font-size: smaller;
   padding: 3px;
   text-align: right;
+  font-family: 'Special Elite', cursive;
+}
+
+.quote {
+  font-size: 1.5rem;
+  text-align: center;
+  color: teal;
+}
+
+#quotewords {
+  font-style: italic;
+  
 }
 
 .bg-img-foot {
@@ -135,22 +246,25 @@ figcaption{
   background-size: cover;
   position: relative;
   text-align: center;
+ 
 }
 
 .bg-img-foot p {
-  /*position: absolute;*/
-  top: 100%;
-  text-align: center;
-  bottom: 8px;
-  /*transform: translate(-50%, -50%);*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  text-decoration: none;
 }
 
 h1 {
   text-transform: uppercase;
   color: #FFFFFF;
-  font-family: 'Darker Grotesque', 'Newport Gothic', sans-serif;
-  font-size: 3rem;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 4rem;
 }
+
 h2 {
   font-family: 'Special Elite', cursive;
 }
@@ -173,14 +287,10 @@ h2 {
 
 #calculator {
   background-color: #FFF6C6;
+  border-radius: 30px;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .1);
 }
- 
-/*
-  give the calculator absolute position (it will be relative to surrounding/parent element)
-  Position the navbar container inside the image 
 
-
-
-
-
-*/
+#calculator h3{
+  font-family: 'Special Elite', cursive;
+}
