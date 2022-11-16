@@ -3,8 +3,9 @@
     <head>
         <title>The Ocean Cleanup</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width; initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="H:\Desktop\ocean_cleanup.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="ocean_cleanup.css">
+        
     </head>
     <body>
         <div class="bg-img">
@@ -15,7 +16,7 @@
                 <div class="nav">
                     <!--<nav>-->
                         <ul>
-                            <li><a href="#sec marine plastic debris">Marine Plastic Debris</a></li>
+                            <li><a href="#secmarineplasticdebris">Marine Plastic Debris</a></li>
                             <li><a href="#history">History</a></li>
                             <li><a href="#technology">Technology</a></li>
                             <ul class="submenu">
@@ -30,7 +31,7 @@
             </div>
         </div>
         <main>
-            <section id="sec summary">
+            <section id="secsummary">
                 <h2>Summary</h2>
                 <div class="paragraph">The Ocean Cleanup is a nonprofit engineering environmental organization based in the Netherlands, founded in 2013 by Boyan Slat, a Dutch-born inventor-entrepreneur of Croatian and Dutch origin who serves as its CEO. It develops technology to extract plastic pollution from the oceans and intercept it in rivers before it can reach the ocean. The organization conducts scientific research into oceanic plastic pollution. It has conducted two expeditions to the North Pacific Gyre, the Mega Expedition and the Aerial Expedition, and continues to publish scientific papers.
                 </div>
@@ -38,11 +39,11 @@
                 src="https://www.youtube-nocookie.com/embed/ROW9F-c0kIQ">
                 </iframe>
             </section>
-            <section id="sec marine plastic debris">
+            <section id="secmarineplasticdebris">
                 <h2>Marine Plastic Debris</h2>
                 <div class="paragraph">It is estimated that there is a stock of 86 million tons of plastic marine debris in the worldwide ocean as of the end of 2013, assuming that 1.4% of global plastics produced from 1950 to 2013 has entered the ocean and has accumulated there. 8.8 million metric tons of plastic waste are dumped in the world's oceans each year. Asia was the leading source of mismanaged plastic waste, with China alone accounting for 2.4 million metric tons. In 2017 the UN estimated that by 2050 there will be more plastic than fish in the oceans, if substantial measures are not taken.</div>
                 <figure class="leftimage">
-                    <img src ="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/gyres.png" alt="oceanic gyres" title="Garbage patches have formed in all five oceanic gyres." />
+                    <img src ="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/gyres.png" alt="oceanic gyres" title="Garbage patches have formed in all five oceanic gyres.">
                     <figcaption>Garbage patches have formed in all five oceanic gyres.</figcaption>
                 </figure>
                 
@@ -50,7 +51,7 @@
                 
                 Plastic pollution harms an estimated 100,000 sea turtles and marine mammals and 1,000,000 sea creatures each year. Larger plastics (called "macroplastics") such as plastic shopping bags can clog the digestive tracts of larger animals when consumed by them and can cause starvation through restricting the movement of food, or by filling the stomach and tricking the animal into thinking it is full. Microplastics on the other hand harm smaller marine life. For example, pelagic plastic pieces in the center of our ocean’s gyres outnumber live marine plankton, and are passed up the food chain to reach all marine life as well as human consumers.</div>
                 <div id="midtable">
-                    <table id="decomposition table">
+                    <table id="decompositiontable">
                         <th colspan="2">How long until it's gone?</br>Decomposition times of common marine debris</th>
                         <tr>
                             <td>2-4 weeks</td>
@@ -106,7 +107,7 @@
             <section id = "history">
                 <h2>History</h2>
                     <figure>
-                            <img src ="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/slat_2018.jpg" alt="Boyan Slat portrait" title="Boyan Slat in 2018" />
+                            <img src ="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/slat_2018.jpg" alt="Boyan Slat portrait" title="Boyan Slat in 2018">
                         <figcaption>Boyan Slat in 2018</figcaption>
                     </figure>
                     <div class="paragraph">In 2011, aged 16, Dutch Boyan Slat came across more plastic than fish while diving in Greece. He decided to devote a high school project for deeper investigation into ocean plastic pollution and why it was considered impossible to clean up.
@@ -125,7 +126,7 @@
                     <h3 id="oceancleanup">Ocean Cleanup</h3>
                     <div class="paragraph">The filtering system uses passive floating structures localized in the ocean gyres. These structures act as a containment boom. The floater drifts with the wind, waves and ocean currents to capture marine debris. A permeable screen underneath the float catches subsurface debris. The system is unmanned and incorporates solar-powered monitoring and navigation systems, including GPS, cameras, lanterns and an automatic identification system (AIS) for vessel traffic services.</div>
                     <figure class="leftimage">
-                        <img src ="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/system_001B.jpg" alt="Passive filtration system in ocean" title="System 001/B in the ocean" />
+                        <img src ="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/system_001B.jpg" alt="Passive filtration system in ocean" title="System 001/B in the ocean">
                         <figcaption>System 001/B in the ocean</figcaption>
                     </figure>
                     <div>
@@ -136,7 +137,7 @@
                         The organization is now developing System 003, which is planned to have a three times bigger plastic intake than the current design. Unlike the previous prototypes, this new system is meant to be a blueprint for an entire fleet of filtering systems able to meet the scale of the problem.</div>
                         <h3 id="riverinterception">River Interception</h3>
                         <figure>
-                            <img src ="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/interceptor.jpg" alt="Passive filtration system in river" title="Interceptor in the Domenican Republic" />
+                            <img src ="http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/interceptor.jpg" alt="Passive filtration system in river" title="Interceptor in the Dominican Republic">
                             <figcaption>Interceptor in the Dominican Republic</figcaption>
                         </figure>
                             <div class="paragraph">As of October 2022, The Ocean Cleanup enterntains eight Interceptors in Indonesia, Malaysia, Viet Nam, Dominican Republic, USA and Jamaica.</div>
@@ -144,79 +145,82 @@
                             <div class="paragraph">In October 2020, The Ocean Cleanup launched their first product made from plastic collected from the Great Pacific Garbage Patch, The Ocean Cleanup Sunglasses. The organization worked with DNV GL to develop a certification for plastic from water sources and the sunglasses were certified to originate from the GPGP. Revenue from the sale of recycling products go into their continued cleanup projects.</div>
                         </div>
                 </section>
-                    </form>
                 </section>
         </main>
         <aside id="calculator">
-                        <div id="checkfootprint">
+                <div id="checkplasticfootprint">
                             <h2>Check Your Own Plastic Footprint</h2>
-                            <form method="post">
+                            <form id="checkfootprint" method="post" class="input">
                             <h3>Food & Kitchen</h3>
-                            <table id="food and kitchen table">
+                            <table id="foodandkitchentable">
                                 <tr>
                                     <td>Plastic bottles</td>
-                                    <td><input type ="number" name="plasticbottles" value="0" step="1">/week</td>
+                                    <td><input type ="number" id="plasticbottles" name="plasticbottles" value="0" step="1">/week</td>
                                 </tr>
                                 <tr>
                                     <td>Plastic bags</td>
-                                    <td><input type ="number" name="plasticbags" value="0" step="1">/week</td>
-                                </tr>
-                                <tr>
-                                    <td>2 months</td>
-                                    <td><input type ="number" name="plasticbags" value="0" step="1">/week</td>
+                                    <td><input type ="number" id="plasticbags" name="plasticbags" value="0" step="1">/week</td>
                                 </tr>
                                 <tr>
                                     <td>Food wrapping</td>
-                                    <td><input type ="number" name="foodwrapping" value="0" step="1">/week</td>
+                                    <td><input type ="number" id="foodwrapping" name="foodwrapping" value="0" step="1">/week</td>
                                 </tr>
                                 <tr>
                                     <td>Yogurt, cream, etc. containers</td>
-                                    <td><input type ="number" name="plasticbags" value="0" step="1">/week</td>
+                                    <td><input type ="number" id="dairycontainers" name="dairycontainers" value="0" step="1">/week</td>
                                 </tr>
                             </table>                                              
                             <h3>Disposable Containers & Packaging</h3>
-                            <table id="disposable containers and packaging table">
+                            <table id="disposablecontainersandpackagingtable" >
                                 <tr>
                                     <td>Take-away plastic boxes</td>
-                                    <td><input type ="number" name="plasticboxes" value="0" step="1">/month</td>
+                                    <td><input type ="number" id="plasticboxes" name="plasticboxes" value="0" step="1">/month</td>
                                 </tr>
                                 <tr>
                                     <td>Take-away cups</td>
-                                    <td><input type ="number" name="cups" value="0" step="1">/month</td>
+                                    <td><input type ="number" id="cups" name="cups" value="0" step="1">/month</td>
                                 </tr>
                                 <tr>
                                     <td>Plastic-wrapped packages</td>
-                                    <td><input type ="number" name="plasticpackages" value="0" step="1">/month</td>
+                                    <td><input type ="number" id="plasticpackages" name="plasticpackages" value="0" step="1">/month</td>
                                 </tr>                        
                             </table>
                             <h3>Bathroom & Laundry</h3>
-                                <table id="bathroom and laundry table">
+                                <table id="bathroomandlaundrytable">
                                     <tr>
                                         <td>Detergent & cleaning product bottles</td>
-                                        <td><input type ="number" name="cleaningbottles" value="0" step="1">/year</td>
+                                        <td><input type ="number" id="cleaningbottles" name="cleaningbottles" value="0" step="1">/year</td>
                                     </tr>
                                     <tr>
                                         <td>Shampoo, conditioner, & toiletries</td>
-                                        <td><input type ="number" name="toiletries" value="0" step="1">/year</td>
+                                        <td><input type ="number" id="toiletries" name="toiletries" value="0" step="1">/year</td>
                                     </tr>
                                     <tr>
                                         <td>Plastic toothbrushes</td>
-                                        <td><input type ="number" name="plastictoothbrushes" value="0" step="1">/year</td>
+                                        <td><input type ="number" id="plastictoothbrushes" name="plastictoothbrushes" value="0" step="1">/year</td>
                                     </tr>                        
                                     <tr>
                                         <td>Toothpaste</td>
-                                        <td><input type ="number" name="toothpastetubes" value="0" step="1">/year</td>
+                                        <td><input type ="number" id="toothpastetubes" name="toothpastetubes" value="0" step="1">/year</td>
                                     </tr>                        
                                 </table>
                             <h3>Household size</h3>
                                 <table>
-                                    <tr>With how many people do you share your household products?<input type ="number" name="toothpastetubes" value="tubes" step="1"></tr>
+                                    <tr>
+                                        <td>With how many people do you share your household products?</td>
+                                        <td><input type ="number" id="householdsize" name="householdsize" value="1" step="1"></td></tr>
                                 </table>
                             <h3>Your Plastic Footprint</h3>
-                            <h3>Tip</h3>                    
+                            <div id="placeholderresult">Your estimated plastic footprint is 0 kg / year.</div>
+                            <!--
+                            <div id="placeholderresult">Your estimated plastic footprint is <span id="placeholderTotal">0</span> kg / year.</div>
+                            -->
+                            <h3>Tip</h3>
+                            <div id="placeholdertip">Most of your plastic waste originates from unknown sources.</div>
                             <section class ="reset calculator">
                                 <input type="reset" value="Reset calculator">
                         </div>
+                            </form>
                     </aside>
         <footer>
             <div class="bg-img-foot">
@@ -225,5 +229,6 @@
                 </div>
             </div>
         </footer>    
+        <script src="ocean_cleanup.js" async></script>
     </body>
 </html>
