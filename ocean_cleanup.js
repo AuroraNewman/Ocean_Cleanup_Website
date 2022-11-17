@@ -2,7 +2,7 @@ if (window.XMLHttpRequest){
     var form=document.getElementById('checkfootprint');
     var inputs = form.querySelectorAll('input');
 
-    calculator.addEventListener("click", calculate);
+    calculator.addEventListener("change", calculate);
     
     function calculate() {
         let unit_footprint={
