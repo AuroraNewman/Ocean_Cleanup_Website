@@ -30,7 +30,7 @@
         </div>
         <main>
             <section id="secsummary">
-                <h2>Summary</h2>
+                <h2 id="secsummarytitle">Summary</h2>
                 <div class="paragraph">The Ocean Cleanup is a nonprofit engineering environmental organization based in the Netherlands, founded in 2013 by Boyan Slat, a Dutch-born inventor-entrepreneur of Croatian and Dutch origin who serves as its CEO. It develops technology to extract plastic pollution from the oceans and intercept it in rivers before it can reach the ocean. The organization conducts scientific research into oceanic plastic pollution. It has conducted two expeditions to the North Pacific Gyre, the Mega Expedition and the Aerial Expedition, and continues to publish scientific papers.
                 </div>
                 <iframe
@@ -46,7 +46,8 @@
                 </figure>
                 
                 <div class="paragraph">Plastic waste has reached all the world's oceans. However, it has been found that plastic debris concentrates in the oceanic gyres where it forms extensive garbage patches. Of those, the North Pacific garbage patch is the biggest, with an estimated area of 1.6 million square kilometers. Plastic accumulating in these patches photodegrades into smaller and smaller particles and releases toxic and endocrine chemicals such as bisphenol A (BPA).
-                
+                <br>
+                <br>
                 Plastic pollution harms an estimated 100,000 sea turtles and marine mammals and 1,000,000 sea creatures each year. Larger plastics (called "macroplastics") such as plastic shopping bags can clog the digestive tracts of larger animals when consumed by them and can cause starvation through restricting the movement of food, or by filling the stomach and tricking the animal into thinking it is full. Microplastics on the other hand harm smaller marine life. For example, pelagic plastic pieces in the center of our ocean’s gyres outnumber live marine plankton, and are passed up the food chain to reach all marine life as well as human consumers.</div>
                 <div id="midtable">
                     <table id="decompositiontable">
@@ -145,7 +146,6 @@
                             <div class="paragraph">In October 2020, The Ocean Cleanup launched their first product made from plastic collected from the Great Pacific Garbage Patch, The Ocean Cleanup Sunglasses. The organization worked with DNV GL to develop a certification for plastic from water sources and the sunglasses were certified to originate from the GPGP. Revenue from the sale of recycling products go into their continued cleanup projects.</div>
                         </div>
             </section>
-        </main>
         <aside id="calculator">
                 <div id="checkplasticfootprint">
                     <h2>Check Your Own Plastic Footprint</h2>
@@ -214,12 +214,14 @@
                             <h3>Tip</h3>
                             <div id="placeholdertip">Most of your plastic waste originates from unknown sources.</div>
                             <section class ="resetcalculator">
-                                <input type="reset" value="Reset Calculator">
+                                <input type="reset" value="Reset Calculator" id="resetcalc">
+                                <br>
+                                <br>
                             </section>
                         </form>
-                        </div>
-                            
+                        </div>                            
                     </aside>
+                </main>
         <footer>
             <div class="bg-img-foot">
                 <div class = "container">
