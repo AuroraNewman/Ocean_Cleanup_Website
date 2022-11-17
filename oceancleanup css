@@ -1,287 +1,299 @@
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&family=Special+Elite&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&family=EB+Garamond&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&family=Special+Elite&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&family=EB+Garamond&display=swap');
 
-/******* TODO *******/
-/*
-1. try to fix the aside so that it stays relative to the content. this is video Overall page layout: boxes and positioning in Intermezzo: CSS Demonstration timestamp around 19 minutes.
+  /******* page variables *******/
+  html {
+    /* modular scale*/
+      
+    --factor: 1.5;
+    --s0: 1 rem;
+    --s1: calc(var(--s0) * var(--factor)):
+    --s2: calc(var(--s1) * var(--factor)):
+    --s3: calc(var(--s2) * var(--factor)):
+    --s4: calc(var(--s3) * var(--factor)):
+    --s5: calc(var(--s4) * var(--factor)):
+    --s-1: calc(var(--s0) / var(--factor)):
+    --s-2: calc(var(--s-1) / var(--factor)):
+    --s-3: calc(var(--s-2) / var(--factor)):
+    --s-4: calc(var(--s-3) / var(--factor)):
+    --s-5: calc(var(--s-4) / var(--factor)):
 
-*/
-
-/******* page variables *******/
-html {
-  /* modular scale*/
     
-  --factor: 1.5;
-  --s0: 1 rem;
-  --s1: calc(var(--s0) * var(--factor)):
-  --s2: calc(var(--s1) * var(--factor)):
-  --s3: calc(var(--s2) * var(--factor)):
-  --s4: calc(var(--s3) * var(--factor)):
-  --s5: calc(var(--s4) * var(--factor)):
-  --s-1: calc(var(--s0) / var(--factor)):
-  --s-2: calc(var(--s-1) / var(--factor)):
-  --s-3: calc(var(--s-2) / var(--factor)):
-  --s-4: calc(var(--s-3) / var(--factor)):
-  --s-5: calc(var(--s-4) / var(--factor)):
 
-  
+    --text-detail-color: #2b440ac0;
+    
 
-  --text-detail-color: #2b440ac0;
-  
-
-  --white-space: 2rem; /*remove this if the variables work*/
-}
-
-/******* page layout *******/
-body {
-  max-width: 1900px;
-}
-
-
-main {
-  max-width: 80ch;
-  margin: 0 auto 0 auto;
-}
-
-header {
-  text-align: center;
-}  
- 
-.nav {
-    overflow: hidden;
-}
-
-.nav li{
-  display: inline-block;    
-}  
-  
-.nav a {
-  display: inline-block;
-  gap: 1rem;
-  flex-wrap: wrap;
-  text-align: center;
-  padding: 14px 16px;
-}
-.submenu {
-  display: none;
-}
-
-img {
-  max-width: 220px;
-}
-
-iframe {
-  width: 80ch;
-  height: 45ch;
-}
-
-footer{
-  text-align: center;
-  font-size: smaller;
-  padding: 2em;
-  border-top: 0;
-}
-
-#midtable{
-  width: 60%;
-  margin: auto;
-  border-collapse: collapse;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-}
-
-th{
-  font-weight: bolder;
-  border-bottom: 2px solid black;
-}
-
-tr{
-  border-bottom: 1px solid grey;
-}
-
-aside {
-  width: 55ch;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding-top: 40px;
-  z-index: 1;
-  font-size: small;
-  top: 133rem;
-  background-color: #FFF6C6;
-}
-
-aside div {
-  padding: 8px;
-  display: block;
-  background-color: #FFF6C6;
-}
-
-@media screen and (max-width: 1500px) {
-  aside {
-    position: static;
-    bottom: 0;
+    --white-space: 2rem; /*remove this if the variables work*/
   }
-}
 
-@media screen and (max-width: 800px) {
-  html{
-    --factor: 1.4;
+  /******* page layout *******/
+  body {
+    max-width: 1900px;
   }
-  h1 {
-    --factor: 2;
-  }
-  nav {
-    position: static;
-    margin-bottom: var(--s1);
-    display: block;
-    --factor: 1.0; 
-  }
-  nav al{
-    position: static;
-  }
-  .nav li{
-    display: block; 
- 
-  }
+
   main {
-    margin: 0;
-  }
-  .bg-img h1{
-    font-size: 3rem;
-  }
-  iframe{
-    width: 25em;
-    height: calc(25em * 9 / 16);
-    max-width: 90vw;
-    max-height: calc(90vw * 9 / 16);
+    max-width: 80ch;
+    margin: 0 auto 0 auto;
   }
 
-}
-
-  /******* colors, fonts, and images *******/
-.nav a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-family: 'Darker Grotesque', sans-serif;
-}
-.nav a:hover {
-  color:antiquewhite;
-  background-color: #86c9c9bd;
-}
-.nav ul{
-  background-color: #00787cbd;
-  list-style-type: none;
-  margin: 0;
-  text-align: center;
-}
-
-.bg-img {
-  background-image: url("http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/ocean.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.paragraph {
-  font-family: 'EB Garamond', serif;
-  font-size: 16px;
-  margin: 1rem auto 1rem auto;
-}
-
-figure {
-  border: thin #c0c0c0 solid;
-  display: flex;
-  flex-flow: column;
-  padding: 5px;
-  max-width: 220px;
-  margin: auto;
-  float: right;
-  rotate: 5deg;
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .1);
-  margin: 1rem;
-}
-
-.leftimage{
-  float: left;
-  rotate: -5deg;
-}
-
-figcaption{
-  background-color: #fff;
-  color: black;
-  font-size: smaller;
-  padding: 3px;
-  text-align: right;
-  font-family: 'Special Elite', cursive;
-}
-
-.quote {
-  font-size: 1.5rem;
-  text-align: center;
-  color: teal;
-}
-
-#quotewords {
-  font-style: italic;
+  header {
+    text-align: center;
+  }  
   
-}
+  .nav {
+      overflow: hidden;
+  }
 
-.bg-img-foot {
-  background-image: url("http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/ocean.jpg");
-  min-height: 50px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  text-align: center;
- 
-}
+  .nav li{
+    display: inline-block;    
+  }  
+    
+  .nav a {
+    display: inline-block;
+    gap: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 14px 16px;
+  }
 
-.bg-img-foot p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: sans-serif;
-  text-decoration: none;
-}
+  #secsummary {
+    margin-top: 70px;
+  }
 
-h1 {
-  text-transform: uppercase;
-  color: #FFFFFF;
-  font-family: 'Darker Grotesque', sans-serif;
-  font-size: 4rem;
-}
+  .submenu {
+    display: none;
+  }
 
-h2 {
-  font-family: 'Special Elite', cursive;
-}
+  img {
+    max-width: 220px;
+  }
 
-#titlethe {
-  font-size: 0.83em;
-  vertical-align: super;
-  font-weight: lighter;
-}
+  iframe {
+    width: 80ch;
+    height: 45ch;
+  }
 
-#titleocean {
-  text-shadow: 2px 2px 4px #000000;
-  font-weight: lighter;
-}
+  footer{
+    margin-top: 25px;
+    text-align: center;
+    font-size: smaller;
+    border-top: 0;
+  }
 
-#titlecleanup {
-  font-weight: bold;
-  text-shadow: 0.05cm 0.05cm  0.025cm #000000;
-}
+  #midtable{
+    width: 75%;
+    margin: auto;
+    border-collapse: collapse;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
 
-#calculator {
-  background-color: #FFF6C6;
-  border-radius: 30px;
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .1);
-}
+  th{
+    font-weight: bolder;
+    border-bottom: 2px solid black;
+  }
 
-#calculator h3{
-  font-family: 'Special Elite', cursive;
-}
+  tr{
+    border-bottom: 1px solid grey;
+  }
+
+  aside {
+    width: 55ch;
+    position: absolute;
+    left: 170ch;
+    margin-top: 40px;
+    z-index: 1;
+    font-size: small;
+    top: 133rem;
+    background-color: #FFF6C6;
+  }
+
+  aside div {
+    padding: 8px;
+    display: block;
+    background-color: #FFF6C6;
+  }
+
+  @media screen and (max-width: 1500px) {
+    aside {
+      position: static;
+      bottom: 0;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    html{
+      --factor: 1.4;
+    }
+    h1 {
+      --factor: 2;
+    }
+    nav {
+      position: static;
+      margin-bottom: var(--s1);
+      display: block;
+      --factor: 1.0; 
+    }
+    nav al{
+      position: static;
+    }
+    .nav li{
+      display: block; 
+  
+    }
+    main {
+      margin: 0;
+    }
+    .bg-img h1{
+      font-size: 3rem;
+    }
+    iframe{
+      width: 25em;
+      height: calc(25em * 9 / 16);
+      max-width: 90vw;
+      max-height: calc(90vw * 9 / 16);
+    }
+
+  }
+
+    /******* colors, fonts, and images *******/
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Darker Grotesque', sans-serif;
+  }
+  .nav a:hover {
+    color:antiquewhite;
+    background-color: #86c9c9bd;
+  }
+  .nav ul{
+    background-color: #00787cbd;
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+  }
+
+  .bg-img {
+    background-image: url("http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/ocean.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: -50px;
+  }
+
+  #secsummarytitle {
+    display: none;
+  }
+
+  .paragraph {
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    margin: 1rem auto 1rem auto;
+  }
+
+  figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+    float: right;
+    rotate: 5deg;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .1);
+    margin: 1rem;
+  }
+
+  .leftimage{
+    float: left;
+    rotate: -5deg;
+  }
+
+  figcaption{
+    background-color: #fff;
+    color: black;
+    font-size: smaller;
+    padding: 3px;
+    text-align: right;
+    font-family: 'Special Elite', cursive;
+  }
+
+  .quote {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #019e9b;
+  }
+
+  #quotewords {
+    font-style: italic;
+    
+  }
+
+  .bg-img-foot {
+    background-image: url("http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/ocean.jpg");
+    min-height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    margin-bottom: -10px;
+  }
+
+  .bg-img-foot p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    text-decoration: none;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 4rem;
+  }
+
+  h2, h3 {
+    font-family: 'Special Elite', cursive;
+  }
+
+  #titlethe {
+    font-size: 0.4em;
+    vertical-align: super;
+    font-weight: lighter;
+  }
+
+  #titleocean {
+    text-shadow: 2px 2px 4px #000000;
+    font-weight: lighter;
+  }
+
+  #titlecleanup {
+    font-weight: bold;
+    text-shadow: 0.05cm 0.05cm  0.025cm #000000;
+  }
+
+  aside {
+    background-color: #FFF6C6;
+    border-radius: 15px;
+    overflow: hidden;
+    perspective: 1px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .1);
+  }
+
+  aside h3{
+    font-family: 'Special Elite', cursive;
+  }
+
+  #resetcalc {
+    background-color: #fff3b3;
+    position: relative;
+    float: right;
+    border-color: #dbd19d;
+    border-radius: 5px;
+  }
