@@ -53,7 +53,6 @@ header {
 }
 
 .nav li{
-  /* float: bottom; bottom is not a valid float spot */
   display: inline-block;    
 }  
   
@@ -75,10 +74,6 @@ img {
 iframe {
   width: 80ch;
   height: 45ch;
-  /*
-  width: 420;
-  height: 315;
-  */
 }
 
 footer{
@@ -113,7 +108,7 @@ aside {
   padding-top: 40px;
   z-index: 1;
   font-size: small;
-  top: 135rem;
+  top: 133rem;
   background-color: #FFF6C6;
 }
 
