@@ -14,7 +14,6 @@
                     <h1><span id="titlethe">The</span><span id="titleocean">Ocean</span><span id ="titlecleanup">Cleanup</span></h1>
                 </header>
                 <div class="nav">
-                    <!--<nav>-->
                         <ul>
                             <li><a href="#secmarineplasticdebris">Marine Plastic Debris</a></li>
                             <li><a href="#history">History</a></li>
@@ -26,7 +25,6 @@
                             </ul>
                             <li><a href="#calculator">Calculator</a></li>
                         </ul>
-                    <!--</nav>-->
                 </div>
             </div>
         </div>
@@ -52,7 +50,9 @@
                 Plastic pollution harms an estimated 100,000 sea turtles and marine mammals and 1,000,000 sea creatures each year. Larger plastics (called "macroplastics") such as plastic shopping bags can clog the digestive tracts of larger animals when consumed by them and can cause starvation through restricting the movement of food, or by filling the stomach and tricking the animal into thinking it is full. Microplastics on the other hand harm smaller marine life. For example, pelagic plastic pieces in the center of our ocean’s gyres outnumber live marine plankton, and are passed up the food chain to reach all marine life as well as human consumers.</div>
                 <div id="midtable">
                     <table id="decompositiontable">
-                        <th colspan="2">How long until it's gone?</br>Decomposition times of common marine debris</th>
+                        <tr>
+                            <th colspan="2">How long until it's gone?<br>Decomposition times of common marine debris</th>
+                        </tr>
                         <tr>
                             <td>2-4 weeks</td>
                             <td>Paper towel</td>
@@ -120,7 +120,7 @@
                     <h2>Technological Approaches</h2>
                     <div class="quote">
                         <span id="quotewords">"Technology is the most potent agent of change. It is an amplifier of our human capabilities" --</span>
-                    </br>
+                    <br>
                         <span id="quoteslat">Boyan Slat</span>
                     </div>
                     <h3 id="oceancleanup">Ocean Cleanup</h3>
@@ -144,64 +144,63 @@
                         <h3 id="plasticrecycling">Plastic Recycling</h3>
                             <div class="paragraph">In October 2020, The Ocean Cleanup launched their first product made from plastic collected from the Great Pacific Garbage Patch, The Ocean Cleanup Sunglasses. The organization worked with DNV GL to develop a certification for plastic from water sources and the sunglasses were certified to originate from the GPGP. Revenue from the sale of recycling products go into their continued cleanup projects.</div>
                         </div>
-                </section>
-                </section>
+            </section>
         </main>
         <aside id="calculator">
                 <div id="checkplasticfootprint">
-                            <h2>Check Your Own Plastic Footprint</h2>
-                            <form id="checkfootprint" method="post" class="input">
-                            <h3>Food & Kitchen</h3>
-                            <table id="foodandkitchentable">
-                                <tr>
-                                    <td>Plastic bottles</td>
-                                    <td><input type ="number" id="plasticbottles" name="plasticbottles" value="0" step="1">/week</td>
-                                </tr>
-                                <tr>
-                                    <td>Plastic bags</td>
-                                    <td><input type ="number" id="plasticbags" name="plasticbags" value="0" step="1">/week</td>
-                                </tr>
-                                <tr>
-                                    <td>Food wrapping</td>
-                                    <td><input type ="number" id="foodwrapping" name="foodwrapping" value="0" step="1">/week</td>
-                                </tr>
-                                <tr>
+                    <h2>Check Your Own Plastic Footprint</h2>
+                    <form id="checkfootprint" method="post" class="input">
+                    <h3>Food & Kitchen</h3>
+                        <table id="foodandkitchentable">
+                        <tr>
+                            <td>Plastic bottles</td>
+                            <td><input type ="number" id="plasticbottles" name="plasticbottles" class="qty" value="0" step="1">/week</td>
+                        </tr>
+                        <tr>
+                            <td>Plastic bags</td>
+                            <td><input type ="number" id="plasticbags" name="plasticbags" class="qty" value="0" step="1">/week</td>
+                        </tr>
+                        <tr>   
+                            <td>Food wrapping</td>
+                            <td><input type ="number" id="foodwrapping" name="foodwrapping" class="qty" value="0" step="1">/week</td>
+                        </tr>
+                        <tr>
                                     <td>Yogurt, cream, etc. containers</td>
-                                    <td><input type ="number" id="dairycontainers" name="dairycontainers" value="0" step="1">/week</td>
-                                </tr>
-                            </table>                                              
-                            <h3>Disposable Containers & Packaging</h3>
-                            <table id="disposablecontainersandpackagingtable" >
-                                <tr>
+                                    <td><input type ="number" id="dairycontainers" name="dairycontainers" class="qty" value="0" step="1">/week</td>
+                        </tr>
+                    </table>                                              
+                    <h3>Disposable Containers & Packaging</h3>
+                    <table id="disposablecontainersandpackagingtable" >
+                        <tr>
                                     <td>Take-away plastic boxes</td>
-                                    <td><input type ="number" id="plasticboxes" name="plasticboxes" value="0" step="1">/month</td>
+                                    <td><input type ="number" id="plasticboxes" name="plasticboxes" class="qty" value="0" step="1">/month</td>
                                 </tr>
                                 <tr>
                                     <td>Take-away cups</td>
-                                    <td><input type ="number" id="cups" name="cups" value="0" step="1">/month</td>
+                                    <td><input type ="number" id="cups" name="cups" class="qty" value="0" step="1">/month</td>
                                 </tr>
                                 <tr>
                                     <td>Plastic-wrapped packages</td>
-                                    <td><input type ="number" id="plasticpackages" name="plasticpackages" value="0" step="1">/month</td>
+                                    <td><input type ="number" id="plasticpackages" name="plasticpackages" class="qty" value="0" step="1">/month</td>
                                 </tr>                        
                             </table>
                             <h3>Bathroom & Laundry</h3>
                                 <table id="bathroomandlaundrytable">
                                     <tr>
                                         <td>Detergent & cleaning product bottles</td>
-                                        <td><input type ="number" id="cleaningbottles" name="cleaningbottles" value="0" step="1">/year</td>
+                                        <td><input type ="number" id="cleaningbottles" name="cleaningbottles" class="qty" value="0" step="1">/year</td>
                                     </tr>
                                     <tr>
                                         <td>Shampoo, conditioner, & toiletries</td>
-                                        <td><input type ="number" id="toiletries" name="toiletries" value="0" step="1">/year</td>
+                                        <td><input type ="number" id="toiletries" name="toiletries" class="qty" value="0" step="1">/year</td>
                                     </tr>
                                     <tr>
                                         <td>Plastic toothbrushes</td>
-                                        <td><input type ="number" id="plastictoothbrushes" name="plastictoothbrushes" value="0" step="1">/year</td>
+                                        <td><input type ="number" id="plastictoothbrushes" name="plastictoothbrushes" class="qty" value="0" step="1">/year</td>
                                     </tr>                        
                                     <tr>
                                         <td>Toothpaste</td>
-                                        <td><input type ="number" id="toothpastetubes" name="toothpastetubes" value="0" step="1">/year</td>
+                                        <td><input type ="number" id="toothpastetubes" name="toothpastetubes" class="qty" value="0" step="1">/year</td>
                                     </tr>                        
                                 </table>
                             <h3>Household size</h3>
@@ -211,16 +210,15 @@
                                         <td><input type ="number" id="householdsize" name="householdsize" value="1" step="1"></td></tr>
                                 </table>
                             <h3>Your Plastic Footprint</h3>
-                            <div id="placeholderresult">Your estimated plastic footprint is 0 kg / year.</div>
-                            <!--
                             <div id="placeholderresult">Your estimated plastic footprint is <span id="placeholderTotal">0</span> kg / year.</div>
-                            -->
                             <h3>Tip</h3>
                             <div id="placeholdertip">Most of your plastic waste originates from unknown sources.</div>
-                            <section class ="reset calculator">
-                                <input type="reset" value="Reset calculator">
+                            <section class ="resetcalculator">
+                                <input type="reset" value="Reset Calculator">
+                            </section>
+                        </form>
                         </div>
-                            </form>
+                            
                     </aside>
         <footer>
             <div class="bg-img-foot">
@@ -229,6 +227,6 @@
                 </div>
             </div>
         </footer>    
-        <script src="ocean_cleanup.js" async></script>
+        <script src="ocean_cleanup.js" defer></script>
     </body>
 </html>
