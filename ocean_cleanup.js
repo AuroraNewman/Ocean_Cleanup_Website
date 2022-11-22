@@ -35,6 +35,8 @@ if (window.XMLHttpRequest){
         let total = item_footprint.plasticbottles + item_footprint.plasticbags + item_footprint.foodwrapping + item_footprint.dairycontainers + item_footprint.plasticboxes + item_footprint.cups + item_footprint.plasticpackages + item_footprint.cleaningbottles + item_footprint.toiletries + item_footprint.plastictoothbrushes + item_footprint.toothpastetubes;
         let householdsize = document.getElementById('householdsize').value
         total = total /householdsize;
+        total = total.toFixed(3);
+        //const rounded_total = total.toFixed(3);
         placeholderTotal.textContent = total;
         
         let find_max_footprint = [
@@ -45,7 +47,6 @@ if (window.XMLHttpRequest){
             console.log(typeof find_max_footprint[i]);
         }
         const max_footprint = Math.max(...find_max_footprint);
-        console.log(max_footprint);
 
         switch(max_footprint) {
             case const01:
