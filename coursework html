@@ -17,12 +17,13 @@
                         <ul>
                             <li><a href="#secmarineplasticdebris">Marine Plastic Debris</a></li>
                             <li><a href="#history">History</a></li>
-                            <li><a href="#technology">Technology</a></li>
-                            <ul class="submenu">
-                                <li><a href="#oceancleanup">Ocean Cleanup</a></li>
-                                <li><a href="#riverinterception">River Interception</a></li>
-                                <li><a href="#plasticrecycling">Plastic Recycling</a></li>
-                            </ul>
+                            <li><a href="#technology">Technology</a>
+                                <ul class="submenu">
+                                    <li><a href="#oceancleanup">Ocean Cleanup</a></li>
+                                    <li><a href="#riverinterception">River Interception</a></li>
+                                    <li><a href="#plasticrecycling">Plastic Recycling</a></li>
+                                </ul>
+                            </li>
                             <li><a href="#calculator">Calculator</a></li>
                         </ul>
                 </div>
@@ -207,17 +208,30 @@
                                 <table>
                                     <tr>
                                         <td>With how many people do you share your household products?</td>
-                                        <td><input type ="number" id="householdsize" name="householdsize" value="1" step="1"></td></tr>
+                                        <td><select id="householdsize" name="householdsize" value="1" step="1">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                           </select> 
+                                        </td>
+                                    </tr>
                                 </table>
                             <h3>Your Plastic Footprint</h3>
                             <div id="placeholderresult">Your estimated plastic footprint is <span id="placeholderTotal">0</span> kg / year.</div>
                             <h3>Tip</h3>
                             <div id="placeholdertip">Most of your plastic waste originates from unknown sources.</div>
-                            <section class ="resetcalculator">
+                            <div class ="resetcalculator">
                                 <input type="reset" value="Reset Calculator" id="resetcalc">
                                 <br>
                                 <br>
-                            </section>
+                            </div>
                         </form>
                         </div>                            
                     </aside>
