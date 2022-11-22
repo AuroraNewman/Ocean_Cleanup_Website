@@ -8,8 +8,8 @@
       
     --factor: 1.5;
     --s0: 1 rem;
-    --s1: calc(var(--s0) * var(--factor)):
-    --s2: calc(var(--s1) * var(--factor)):
+    --s1: calc(var(--s0) * var(--factor)): 
+    --s2: calc(var(--s1) * var(--factor)): 
     --s3: calc(var(--s2) * var(--factor)):
     --s4: calc(var(--s3) * var(--factor)):
     --s5: calc(var(--s4) * var(--factor)):
@@ -17,19 +17,22 @@
     --s-2: calc(var(--s-1) / var(--factor)):
     --s-3: calc(var(--s-2) / var(--factor)):
     --s-4: calc(var(--s-3) / var(--factor)):
-    --s-5: calc(var(--s-4) / var(--factor)):
+    --s-5: calc(var(--s-4) / var(--factor)):    
 
-    
+    --text-detail-color: #2b440ac0;    
 
-    --text-detail-color: #2b440ac0;
-    
+    --white-space: 2rem;
+    overflow-x: hidden;
 
-    --white-space: 2rem; /*remove this if the variables work*/
   }
 
+  /* 1rem = 16px */
+  /* 1em = whatever the font size of the parent is */ 
+
   /******* page layout *******/
+
   body {
-    max-width: 1900px;
+    max-width: 100%;
   }
 
   main {
@@ -54,19 +57,24 @@
     gap: 1rem;
     flex-wrap: wrap;
     text-align: center;
-    padding: 14px 16px;
-  }
-
-  #secsummary {
-    margin-top: 70px;
+    padding: 0.9rem 1rem;
+    font-weight: bold;
   }
 
   .submenu {
     display: none;
   }
 
+  section {
+    margin-top: 2.5rem;
+  }
+
+  #secsummary {
+    margin-top: 4.5rem;
+  }
+
   img {
-    max-width: 220px;
+    max-width: 13.75rem;
   }
 
   iframe {
@@ -75,18 +83,19 @@
   }
 
   footer{
-    margin-top: 25px;
+    margin-top: 1.6rem;
     text-align: center;
     font-size: smaller;
     border-top: 0;
   }
 
-  #midtable{
+  #decompositiontable{
     width: 75%;
     margin: auto;
     border-collapse: collapse;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
+    
   }
 
   th{
@@ -94,33 +103,37 @@
     border-bottom: 2px solid black;
   }
 
-  tr{
-    border-bottom: 1px solid grey;
+  #decompositiontable tr+tr{
+    border-bottom: 1px solid black;  
   }
 
   aside {
-    width: 55ch;
+    width: 60ch;
     position: absolute;
-    left: 170ch;
-    margin-top: 40px;
+    margin-left: 100ch;
     z-index: 1;
+    top: 165em;
     font-size: small;
-    top: 133rem;
     background-color: #FFF6C6;
+  }
+
+  input {
+    width: 4em;
   }
 
   aside div {
-    padding: 8px;
+    padding: 0.5rem;
     display: block;
     background-color: #FFF6C6;
   }
-
+/*
   @media screen and (max-width: 1500px) {
     aside {
       position: static;
       bottom: 0;
     }
   }
+  */
 
   @media screen and (max-width: 800px) {
     html{
@@ -146,7 +159,10 @@
       margin: 0;
     }
     .bg-img h1{
-      font-size: 3rem;
+      font-size: 5em;
+    }
+    figure {
+      float: none !important;
     }
     iframe{
       width: 25em;
@@ -154,19 +170,34 @@
       max-width: 90vw;
       max-height: calc(90vw * 9 / 16);
     }
-
+    aside {
+      display: flex;
+      flex-direction: row;
+      margin: auto; 
+      justify-content: center;
+      position: relative;
+      top: 0;
+    }
   }
 
     /******* colors, fonts, and images *******/
+  * {
+    font-size: 16px; 
+  }
+
   .nav a {
     color: #fff;
     text-decoration: none;
     font-size: 1.5rem;
     font-family: 'Darker Grotesque', sans-serif;
   }
-  .nav a:hover {
-    color:antiquewhite;
-    background-color: #86c9c9bd;
+  .nav li:hover {
+    color: #00787cbd;
+    background-color: #FFFFFFbd;
+    font-weight: bolder;
+  }
+  .nav a:hover{
+    color: #00787c;
   }
   .nav ul{
     background-color: #00787cbd;
@@ -175,12 +206,38 @@
     text-align: center;
   }
 
+  #titlethe {
+    font-size: 1em;
+    vertical-align: super;
+    font-weight: lighter;
+  }
+
+  #titleocean {
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px #000000;
+    font-weight: lighter;
+  }
+
+  #titlecleanup {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 0.05cm 0.05cm  0.025cm #000000;
+  }
+
+
+  h1 {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 4rem;
+  }
+
   .bg-img {
     background-image: url("http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/ocean.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: -50px;
+    margin: -3rem;
   }
 
   #secsummarytitle {
@@ -197,12 +254,12 @@
     border: thin #c0c0c0 solid;
     display: flex;
     flex-flow: column;
-    padding: 5px;
-    max-width: 220px;
+    padding: 0.4rem;
+    max-width: 13.7rem;
     margin: auto;
     float: right;
     rotate: 5deg;
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .1);
+    box-shadow: 0.5rem 0.5rem 1.25rem rgba(160, 160, 160, .9);
     margin: 1rem;
   }
 
@@ -213,9 +270,9 @@
 
   figcaption{
     background-color: #fff;
-    color: black;
+    color: #00000088;
     font-size: smaller;
-    padding: 3px;
+    padding: 0.25rem;
     text-align: right;
     font-family: 'Special Elite', cursive;
   }
@@ -233,13 +290,13 @@
 
   .bg-img-foot {
     background-image: url("http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/ocean_cleanup/resources/ocean.jpg");
-    min-height: 50px;
+    min-height: 3.1rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     text-align: center;
-    margin-bottom: -10px;
+    margin-bottom: -0.6rem;
   }
 
   .bg-img-foot p {
@@ -251,39 +308,21 @@
     text-decoration: none;
   }
 
-  h1 {
-    text-transform: uppercase;
-    color: #FFFFFF;
-    font-family: 'Darker Grotesque', sans-serif;
-    font-size: 4rem;
-  }
-
   h2, h3 {
     font-family: 'Special Elite', cursive;
   }
 
-  #titlethe {
-    font-size: 0.4em;
-    vertical-align: super;
-    font-weight: lighter;
+  h2 {
+    font-size: 1.5rem;
   }
 
-  #titleocean {
-    text-shadow: 2px 2px 4px #000000;
-    font-weight: lighter;
-  }
-
-  #titlecleanup {
-    font-weight: bold;
-    text-shadow: 0.05cm 0.05cm  0.025cm #000000;
-  }
-
+  
   aside {
     background-color: #FFF6C6;
-    border-radius: 15px;
+    border-radius: 1rem;
     overflow: hidden;
     perspective: 1px;
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .1);
+    box-shadow: 0.5rem 0.5rem 1.25rem rgba(160, 160, 160, .9);
   }
 
   aside h3{
@@ -296,4 +335,5 @@
     float: right;
     border-color: #dbd19d;
     border-radius: 5px;
+    width: fit-content;
   }
